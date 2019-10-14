@@ -6,7 +6,7 @@
  <?php
     $this->load->view('common/header.php');
  ?>
- <title>Test</title>
+ <title>Test 1234 </title>
 
 </head>
 
