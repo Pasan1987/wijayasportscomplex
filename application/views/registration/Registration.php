@@ -3,106 +3,127 @@
 
 <head>
 
- <?php
+    <?php
     $this->load->view('common/header.php');
- ?>
- <title>Test</title>
+    ?>
+    <title>Test 1234 </title>
 
 </head>
 
+<body class="bg-gradient-primary">
+<div class="container register">
+    <div class="row">
+        <div class="col-md-9 register-right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="padding-top: 50px;">
+                    <h3 class="register-heading">Member Registration Form</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <div class="maxl">
+                                    <label class="radio inline">
+                                        <input type="radio" name="gender" value="male" checked>
+                                        <span> Male </span>
+                                    </label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="gender" value="female">
+                                        <span>Female </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                    <option>What is your Birthdate?</option>
+                                    <option>What is Your old Phone Number</option>
+                                    <option>What is your Pet Name?</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                            </div>
+                            <input type="submit" class="btnRegister"  value="Register"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3  class="register-heading">Apply as a Hirer</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                            </div>
 
-<body id="page-top">
-  <div>
-  <h3>Registrations Forms<h3>
-</div>
-<form>
-  <div>
-    <label for="name">Name</label>
-<div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
-    </div>
-  </div>
-</div>
 
-<div class="form-group row">
-  <label for="example-date-input" class="col-2 col-form-label">Date of Birth</label>
-  <div class="col-4">
-    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-  </div>
-</div>
-<div>
-  <label for="gender">Gender</label>
-  <div class="col-4">
-<div class="radio">
-  <label><input type="radio" name="optradio" checked>Male</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio">Female</label>
-</div>
-</div>
-
-
-  <div class="form-group">
-    <label for="address">Address</label>
-    <input type="email" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="addressHelp" class="form-text text-muted"></small>
-  </div>
-  <div class="form-group">
-  <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted"></small>
-  </div>
-  <div class="form-group">
-  <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted"></small>
-  </div>
-  <label for="selectsports">Select the sports</label>
-  <div class="form-check has-success">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
-    Badminton
-  </label>
-</div>
-<div class="form-check has-warning">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
-    Swimming
-  </label>
-</div>
-<div class="form-check has-danger">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
-    Body Building
-  </label>
-</div>
-<div><button type="submit" class="btn btn-primary">Submit</button>
-</div>
-</form>
-
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-
-     
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-       
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                    <option>What is your Birthdate?</option>
+                                    <option>What is Your old Phone Number</option>
+                                    <option>What is your Pet Name?</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                            </div>
+                            <input type="submit" class="btnRegister"  value="Register"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
 </div>
 
+
+<!-- Bootstrap core JavaScript-->
+<script src="<?php echo base_url() ?>assests/vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url() ?>assests/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="<?php echo base_url() ?>assests/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="<?php echo base_url() ?>assests/js/sb-admin-2.min.js"></script>
+
 </body>
+
 </html>
