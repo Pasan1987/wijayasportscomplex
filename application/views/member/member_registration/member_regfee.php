@@ -3,15 +3,39 @@
 
 <head>
 
-    <?php
+ <?php
     $this->load->view('common/header.php');
-    ?>
-    <title>Test 1234 </title>
+ ?>
+ <title>Test</title>
 
 </head>
 
-<body class="bg-gradient-primary">
-<div class="container register">
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <?php $this->load->view('common/sidebar.php'); ?>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+            <?php $this->load->view('common/navbar.php'); ?>
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Reservation</h1>
+            
+          </div>
+
+         <!--Content-->
+         <div class="container register">
     <div class="row">
         <div class="col-md-9 register-right">
             <div class="tab-content" id="myTabContent">
@@ -62,9 +86,7 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
                             </div>
-                            <form action="<?php echo base_url() ?>index.php/registration/Registration/registrationDetails">
-                            <input type="submit" class="btn btn-primary btn-user btn-block" value="Register"/>
-                            </form>
+                            <input type="submit" class="btn btn-primary btn-user btn-block"  value="wwwww">
                         </div>
                     </div>
                 </div>
@@ -105,7 +127,7 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="`Answer *" value="" />
                             </div>
-                            <input type="submit" class="btn btn-primary btn-user btn-block"  value="Next"/>
+                            <!-- <input type="submit" class="btn btn-primary btn-user btn-block"  value="Register"/> -->
                         </div>
                     </div>
                 </div>
@@ -114,6 +136,32 @@
     </div>
 
 </div>
+
+
+         <!--Content-->
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+    <?php 
+    $this->load->view('common/footer.php');
+     ?>
+     
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+<?php $this->load->view('common/scripts.php'); ?>
+  
+
+
+
+
+
 
 
 <!-- Bootstrap core JavaScript-->

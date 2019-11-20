@@ -3,15 +3,39 @@
 
 <head>
 
-    <?php
+ <?php
     $this->load->view('common/header.php');
-    ?>
-    <title>Test 1234 </title>
+ ?>
+ <title>Test</title>
 
 </head>
 
-<body class="bg-gradient-primary">
-<div class="container register">
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <?php $this->load->view('common/sidebar.php'); ?>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+            <?php $this->load->view('common/navbar.php'); ?>
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Reservation</h1>
+            
+          </div>
+
+         <!--Content-->
+         <div class="container register">
     <div class="row">
         <div class="col-md-9 register-right">
             <div class="tab-content" id="myTabContent">
@@ -113,6 +137,34 @@
 
 </div>
 
+         <!--Content-->
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+    <?php 
+    $this->load->view('common/footer.php');
+     ?>
+     
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+<!-- <?php $this->load->view('common/scripts.php'); ?> -->
+  
+
+</body>
+
+<!-- </html> -->
+
+
+<!-- <body class="bg-gradient-primary"> -->
+
+
 
 <!-- Bootstrap core JavaScript-->
 <script src="<?php echo base_url() ?>assests/vendor/jquery/jquery.min.js"></script>
@@ -124,6 +176,6 @@
 <!-- Custom scripts for all pages-->
 <script src="<?php echo base_url() ?>assests/js/sb-admin-2.min.js"></script>
 
-</body>
+<!-- </body> -->
 
 </html>
