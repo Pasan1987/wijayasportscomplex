@@ -34,7 +34,7 @@ $this->load->view('common/header.php');
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="card" style="padding:20px; border-color:#4e73df">
-                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>REGISTRATION FORM</strong></h4></div><br>
+                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>MEMBER REGISTRATION</strong></h4></div><br>
                     <div class="row col-md-12">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -59,7 +59,7 @@ $this->load->view('common/header.php');
                             </div>
                             <div class="form-group">
                             <label><strong>NIC</strong></label>
-                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
+                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="NIC" value="" />
                             </div>
                             <div class="form-group">
                             <div class=col-md-12><label><strong>Gender</strong><label></div>
@@ -78,7 +78,7 @@ $this->load->view('common/header.php');
                                 <label><strong>Mobile Number</strong></label>
                                 <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
                             </div>
-                  
+
                             </form>
                     </div>
                 </div>

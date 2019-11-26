@@ -34,7 +34,7 @@ $this->load->view('common/header.php');
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="card" style="padding:20px; border-color:#4e73df">
-                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>REGISTRATION FORM</strong></h4></div><br>
+                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>MEMBER REGISTRATION</strong></h4></div><br>
                     <div class="row col-md-12">
                         <div class="col-md-6">
                             <div class="form-group">

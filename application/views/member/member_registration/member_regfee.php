@@ -34,28 +34,27 @@ $this->load->view('common/header.php');
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="card" style="padding:20px; border-color:#4e73df">
-                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>REGISTRATION FORM</strong></h4></div><br>
+                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>MEMBER REGISTRATION</strong></h4></div><br>
                     <div class="row col-md-12">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label><strong>Height</strong></label>
+                                <label><strong>Amount</strong></label>
                                 <input type="number" class="form-control bdr-color" placeholder="Height *" value="" />
                             </div>
                             <div class="form-group">
                                 <label><strong>Weight</strong></label>
-                                <input type="number" class="form-control  bdr-color" placeholder="Weight *" value="" />
+                                <input type="number" class="form-control  bdr-color" placeholder="Amount *" value="" />
                             </div>
                         </div>
                             </form>
                     </div>
                     <div class="col-md-12 row">
                 <div class="col-md-6">
-                <form action="<?php echo base_url() ?>index.php/member/member_registration/Registration/registrationProcess">
+                <form action="<?php echo base_url() ?>index.php/member/member_registration/Registration/registrationDetails">
                 <input type="submit" class="btn btn-primary btn-user btn-block" value="Previous" />
                 </div>
                 <div class="col-md-6">
-                <form action="<?php echo base_url() ?>index.php/member/member_registration/Registration/registrationFee">
-                <input type="submit" class="btn btn-primary btn-user btn-block" value="Next"/>
+                <input class="btn btn-primary btn-user btn-block" value="Submit"/>
                 </div>
                 </div>
                 </div>
@@ -90,20 +89,6 @@ $this->load->view('common/footer.php');
 </body>
 
 </html>
-
-
-
-
-
-<!-- Bootstrap core JavaScript-->
-<script src="<?php echo base_url() ?>assests/vendor/jquery/jquery.min.js"></script>
-<script src="<?php echo base_url() ?>assests/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="<?php echo base_url() ?>assests/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for all pages-->
-<script src="<?php echo base_url() ?>assests/js/sb-admin-2.min.js"></script>
 
 
 
