@@ -31,7 +31,7 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
+          <i class="fa fa-users	"></i>
           <span>Member</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -46,7 +46,7 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_emp" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
+          <i class="fa fa-address-card"></i>
           <span>Employee</span>
         </a>
         <div id="collapse_emp" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -61,7 +61,7 @@
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
+          <i class="fas fa-money-check-alt	"></i>
           <span>Payment</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
@@ -77,7 +77,7 @@
       <hr class="sidebar-divider">
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRes" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
+        <i class="fas fa-book"></i>
           <span>Reservation</span>
         </a>
         <div id="collapseRes" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -110,20 +110,31 @@
             <a class="collapse-item" href="<?php echo base_url() ?>index.php/sport/bodybuilding/sportBodybuilding">Body Building</a>
             <a class="collapse-item" href="<?php echo base_url() ?>index.php/sport/swimming/sportSwimming">Swimming</a>
             <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
           </div>
         </div>
       </li>
 
-      <hr class="sidebar-divider">
+      <!-- <hr class="sidebar-divider"> -->
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Reports</span></a>
+      </li> -->
+      <hr class="sidebar-divider">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRep" aria-expanded="true" aria-controls="collapseUtilities">
+        <i class="far fa-file-alt"></i>
+          <span>Report</span>
+        </a>
+        <div id="collapseRep" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <!-- <h6 class="collapse-header">Custom Components:</h6> -->
+            <a class="collapse-item" href="<?php echo base_url() ?>index.php/report/report/reportGenerate">Report</a>
+                                          
+          </div>
+        </div>
       </li>
 
       <hr class="sidebar-divider">
@@ -131,8 +142,9 @@
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url() ?>index.php/setting/setting/allSetting">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Settings</span></a>
+         <i class="fas fa-tools"></i>
+          <span>Settings</span>
+          </a>
       </li>
 
       <!-- Divider -->

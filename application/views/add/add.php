@@ -30,12 +30,11 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Register</h1>
+            <h1 class="h3 mb-0 text-gray-800">Add Reservation</h1>
             
           </div>
-
-         <!--Content-->
-         <div class="container register">
+           <!--Content-->
+           <div class="container register">
     <div class="row">
         <div class="col-md-9 register-right">
             <div class="tab-content" id="myTabContent">
@@ -150,7 +149,7 @@
 
 </div>
 
-         <!--Content-->
+           <!--Content-->
 
         </div>
         <!-- /.container-fluid -->
@@ -173,21 +172,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- Bootstrap core JavaScript-->
-<script src="<?php echo base_url() ?>assests/vendor/jquery/jquery.min.js"></script>
-<script src="<?php echo base_url() ?>assests/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="<?php echo base_url() ?>assests/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for all pages-->
-<script src="<?php echo base_url() ?>assests/js/sb-admin-2.min.js"></script>
-
-
-

@@ -35,8 +35,50 @@
           </div>
 
          <!--Content-->
-
-
+         <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Sport</th>
+      <th scope="col">Event</th>
+      <th scope="col">Booking Date</th>
+      <th scope="col">Time</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>dsad</td>
+      <td>as</td>
+      <td>asd</td>
+      <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
+      <button type="button" class="btn btn-primary btn-sm">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>wee</td>
+      <td>ccx</td>
+      <td>aas</td>
+      <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
+      <button type="button" class="btn btn-primary btn-sm">Delete</button>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+<p align="right">
+<a class="btn btn-primary" href="<?php echo base_url() ?>index.php/add/add/addreservation" role="button">ADD</a>
+</p>
          <!--Content-->
 
         </div>
