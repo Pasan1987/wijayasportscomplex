@@ -30,19 +30,31 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">View</h1>
+            <h1 class="h3 mb-0 text-gray-800">Reports</h1>
             
           </div>
 
          <!--Content-->
-
+         <div class="form-group">
+                    <div class="row">
+                        <label for="date" class="col-sm-1 control-label">since</label>
+                        <div class="col-sm-5">
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                        <label for="date" class="col-sm-1 control-label">To</label>
+                        <div class="col-sm-5">
+                            <input type="date" class="form-control" id="date" name="date">
+                    </div>   
+                </div>
+                <div>
+                </div>
 
          <!--Content-->
 
-        </div>
+       
         <!-- /.container-fluid -->
 
-      </div>
+    
       <!-- End of Main Content -->
     <?php 
     $this->load->view('common/footer.php');
@@ -54,7 +66,8 @@
 
   </div>
   <!-- End of Page Wrapper -->
-<?php $this->load->view('common/scripts.php'); ?>
+<?php 
+$this->load->view('common/scripts.php'); ?>
   
 
 </body>

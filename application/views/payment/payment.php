@@ -56,7 +56,7 @@
                 <div class="panel-body form-horizontal payment-form">
                     <div class="form-group">
                         <div class="row">
-                        <label for="concept" class="col-sm-4 control-label">Concept</label>
+                        <label for="concept" class="col-sm-4 control-label">ID</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" id="concept" name="concept">
                         </div>
