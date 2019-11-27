@@ -41,13 +41,14 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="padding-top: 50px;">
                     <h3 class="register-heading">Member Registration Form</h3>
+                    <form action="<?php echo base_url()?>index.php/employee/employee_registration/employee_reg/employeeRegProcess" method="POST">
                     <div class="row register-form">
                         <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="First Name *" value="" />
+                            <div class="form-group"><a>First Name</a>
+                                <input type="text" class="form-control" id="txtFname" name="firstname" placeholder="First Name *" value="" />
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                            <div class="form-group"><a>Date of Birth</a>
+                                <input type="number" class="form-control" placeholder="DD/MM/YYYY *" value="" />
                             </div>
                             <div class="form-group">
                                 <input type="password" class="form-control" placeholder="Password *" value="" />
@@ -69,7 +70,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="form-group"><a>Last Name</a>
                                 <input type="email" class="form-control" placeholder="Your Email *" value="" />
                             </div>
                             <div class="form-group">
@@ -89,6 +90,7 @@
                             <input type="submit" class="btn btn-primary btn-user btn-block"  value="Register"/>
                         </div>
                     </div>
+                </form>
                 </div>
                 <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <h3  class="register-heading">Apply as a Hirer</h3>

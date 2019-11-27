@@ -45,6 +45,7 @@
       <th scope="col">Booking Date</th>
       <th scope="col">Time</th>
       <th scope="col">Contact</th>
+      <th scope="col">Payment</th>
       <th scope="col">Status</th>
     </tr>
   </thead>
@@ -57,6 +58,7 @@
       <td>dsad</td>
       <td>as</td>
       <td>asd</td>
+      <td>qwe</td>
       <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
       <button type="button" class="btn btn-primary btn-sm">Delete</button>
       </td>
@@ -69,6 +71,7 @@
       <td>wee</td>
       <td>ccx</td>
       <td>aas</td>
+      <td>qwas</td>
       <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
       <button type="button" class="btn btn-primary btn-sm">Delete</button>
       </td>

@@ -99,7 +99,7 @@
                 </div>
                     <div class="form-group">
                         <div class="col-sm-12 text-right">
-                            <button type="button" class="btn btn-default preview-add-button">
+                            <button type="button" class="btn btn-default preview-add-button" onclick="btnAdd()">
                                 <span class="glyphicon glyphicon-plus"></span> Add
                             </button>
                         </div>
@@ -123,7 +123,7 @@
                                     <th>Date</th>
                                 </tr>
                             </thead>
-                            <tbody></tbody> <!-- preview content goes here-->
+                            <tbody id="tbdPayment"></tbody> <!-- preview content goes here-->
                         </table>
                     </div>                            
                 </div>
@@ -165,6 +165,42 @@
   
 
 </body>
+
+<script>
+function btnAdd()
+{
+    var concept = document.getElementById('concept').value;
+    var description = document.getElementById('description').value;
+    var amount = document.getElementById('amount').value;
+    var status = document.getElementById('status').value;
+    var date = document.getElementById('date').value;
+        
+    var tbdPayment = document.getElementById('tbdPayment');
+
+    var row = document.createElement("tr");
+   
+
+    var tdConcept = document.createElement("td");
+    var tdDescription = document.createElement("td");
+    var tdAmount = document.createElement("td");
+    var tdStatus = document.createElement("td");
+    var tdDate = document.createElement("td");
+
+    tdConcept.innerHTML = concept;
+    tdDescription.innerHTML = description;
+    tdAmount.innerHTML = amount;
+    tdStatus.innerHTML = status;
+    tdDate.innerHTML = date;
+
+    row.appendChild(tdConcept);
+    row.appendChild(tdDescription);
+    row.appendChild(tdAmount);
+    row.appendchild(tdStatud);
+    row.appendchild(tdDate);
+
+    tbdPayment.appendChild(row);
+}
+</script>
 
 </html>
 
