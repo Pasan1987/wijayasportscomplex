@@ -16,5 +16,10 @@ class Registration extends CI_Controller
     {
         $this->load->view('member/member_registration/member_regfee');
     }
+    public function employeeRegProcess()
+	{
+		$this->load->model('member_model/member_model');
+		$this->member_model->memberRegprocess();
+	}
 
 }

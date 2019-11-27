@@ -39,11 +39,11 @@ $this->load->view('common/header.php');
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label><strong>First Name</strong></label>
-                                <input type="text" class="form-control bdr-color" placeholder="First Name *" value="" />
+                                <input type="text" class="form-control bdr-color" placeholder="First Name *" value="" id="firstname" value="firstname" />
                             </div>
                             <div class="form-group">
                                 <label><strong>Date of Birth</strong></label>
-                                <input type="number" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" value="" />
+                                <input type="number" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" id="dateofbirth" value="" />
                             </div>
 
                             <div class="form-group">
@@ -55,11 +55,11 @@ $this->load->view('common/header.php');
                         <div class="col-md-6">
                             <div class="form-group">
                             <label><strong>Last Name</strong></label>
-                                <input type="text" class="form-control  bdr-color" placeholder="Last Name *" value="" />
+                                <input type="text" class="form-control  bdr-color" placeholder="Last Name *" id="lastname" value="" />
                             </div>
                             <div class="form-group">
                             <label><strong>NIC</strong></label>
-                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="NIC" value="" />
+                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="NIC" id="nic" value="" />
                             </div>
                             <div class="form-group">
                             <div class=col-md-12><label><strong>Gender</strong><label></div>
@@ -76,7 +76,20 @@ $this->load->view('common/header.php');
                             </div>
                             <div class="form-group">
                                 <label><strong>Mobile Number</strong></label>
-                                <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
+                                <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" id="mobilenumber" value="" />
+                            </div>
+                            <div class="form-group">
+                            <div class=col-md-12><label><strong>Civil Status</strong><label></div>
+                            <div class=col-md-12>
+                            <label class="radio inline">
+                                        <input type="radio" name="gender" value="male" checked>
+                                        <span> Married</span>
+                                    </label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="gender" value="female">
+                                        <span>Unmaried</span>
+                                    </label>
+                            </div>
                             </div>
 
                             </form>

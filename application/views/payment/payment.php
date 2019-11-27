@@ -39,7 +39,6 @@
 <div class="container">
 	<div class="row">
         <div class="col-sm-12">
-            <legend>Mr. Sosa:</legend> 
         </div>
         </div>
         <!-- panel preview -->
