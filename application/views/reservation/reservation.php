@@ -30,59 +30,50 @@ $this->load->view('common/header.php');
 
           <!-- Page Heading -->
          <!-- content -->
-         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="card" style="padding:20px; border-color:#4e73df">
-                <div class="card-header" ><h4 style="padding-left: 190px;"><strong>RESERVATION</strong></h4></div><br>
-                    <div class="row col-md-12">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label><strong>Name</strong></label>
-                                <input type="text" class="form-control bdr-color" placeholder="Name *" value="" />
-                            </div>
-                            <div class="form-group">
-                                <label><strong>Sport</strong></label>
-                                <select class="form-control" plceholder="Select a sport">
-                                <option selected>Select a sport</option>
-                                <option value="Swimming">Swimming</option>
-                                <option value="Badminton">Badminton</option>
-                                </select>
-                                </div>
-                            <div class="form-group">
-                             <label for="comment"><strong>Event</strong></label>
-                              <textarea class="form-control  bdr-color" rows="6" id="address"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                            <label><strong>Date</strong></label>
-                                <input type="text" class="form-control  bdr-color" placeholder="DD/MM/YYYY *"  value="" />
-                            </div>
-                            <div class="form-group">
-                            <label><strong>Time</strong></label>
-                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="hh:mm"  value="" />
-                            </div>
-                            <div class="form-group">
-                            <label><strong>Contact Number</strong></label>
-                                <input type="text" class="form-control  bdr-color" placeholder="Mobile Number *" value="" />
-                            </div>
-                            </form>
-                    </div>
-                </div>
-                <div class="col-md-12 row">
-                <div class="col-md-6">
-                <input type="reset" class="btn btn-primary btn-user btn-block" value="reset" />
-                </div>
-                <div class="col-md-6">
-                <input type="submit" class="btn btn-primary btn-user btn-block" value="Submit"/>
-                </div>
-                </div>
-            </div>
-        <div class="col-md-2"></div>
-         </div>
-
+         <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">NIC</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Position</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>dsad</td>
+      <td>as</td>
+      <td>asd</td>
+      <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
+      <button type="button" class="btn btn-primary btn-sm">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>wee</td>
+      <td>ccx</td>
+      <td>aas</td>
+      <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
+      <button type="button" class="btn btn-primary btn-sm">Delete</button>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+<p align ="right">
+<a class="btn btn-primary" href="<?php echo base_url() ?>index.php/reservation/reservation/addreservation" role="button">ADD</a>
+</p>
          <!-- content -->
 
         </div>

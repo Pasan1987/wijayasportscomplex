@@ -30,6 +30,7 @@ $this->load->view('common/header.php');
 
           <!-- Page Heading -->
          <!-- content -->
+         <form action = "<?php echo base_url('index.php/employee/employee_registration/employee_reg/employeeRegProcess')?>" method = "POST">
          <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
@@ -38,45 +39,50 @@ $this->load->view('common/header.php');
                     <div class="row col-md-12">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label><strong>Full Name</strong></label>
-                                <input type="text" class="form-control bdr-color" placeholder="Full Name *" value="" />
+                                <label><strong>Name with Initials</strong></label>
+                                <input type="text" class="form-control bdr-color" placeholder="Name with Initials*" value="" name = "namewithiniial" />
                             </div>
-                            <div class="form-group">
-                            <div class=col-md-12><label><strong>Gender</strong><label></div>
-                            <div class=col-md-12>
-                            <label class="radio inline">
-                                        <input type="radio" name="gender" value="male" checked>
-                                        <span> Male</span>
-                                    </label>
-                                    <label class="radio inline">
-                                        <input type="radio" name="gender" value="female">
-                                        <span>Female</span>
-                                    </label>
-                            </div>
-                            </div>
+                           
+                            <div>
+                            <label><strong>Select</strong></label>
+                            <select name="gender" id= "gender" class="form-control">
+                               <option value="" selecteddisable>Select Gender</option>
+                               <option value="1">Male</option>
+                               <option value="2">Female</option> 
+                            </select>
+                         </div><br>
 
                             <div class="form-group">
                              <label for="comment"><strong>Address</strong></label>
-                              <textarea class="form-control  bdr-color" rows="6" id="address"></textarea>
+                              <textarea class="form-control  bdr-color" rows="6" name = "address" id="address"></textarea>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                             <label><strong>Date of Birth</strong></label>
-                                <input type="text" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" value="" />
+                                <input type="text" name="dateofbirth" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" value="" id="dob"  />
                             </div>
                             <div class="form-group">
                             <label><strong>NIC</strong></label>
-                                <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
+                                <input type="text" minlength="10" maxlength="10" name="nic" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
                             </div>
+                            <div>
+                            <label><strong>Designation</strong></label>
+                            <select name="designation" id= "designation" class="form-control">
+                               <option value="" selecteddisable>Select Gender</option>
+                               <option value="1">Chairman</option>
+                               <option value="2">Manager</option> 
+                               <option value="3">Employee</option>
+                            </select>
+                         </div><br>
                             <div class="form-group">
                                 <label><strong>Mobile Number</strong></label>
                                 <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
                             </div>
     
                   
-                            </form>
+                            
                     </div>
                 </div>
                 <div class="col-md-12 row">
@@ -88,7 +94,8 @@ $this->load->view('common/header.php');
                 </div>
                 </div>
             </div>
-        <div class="col-md-2"></div>
+            </form>
+                <div class="col-md-2"></div>
          </div>
 
          <!-- content -->
