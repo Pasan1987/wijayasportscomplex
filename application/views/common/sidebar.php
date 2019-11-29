@@ -53,8 +53,8 @@
         <div id="collapse_emp" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Components:</h6> -->
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/employee_registration/employee_reg/employeeReg">Registration</a>
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/view_employee/view_empdetails/viewEmployee">View</a>
+            <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/employee_reg/employeeReg">Registration</a>
+            <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/view_employee/viewemp_details">View</a>
           </div>
         </div>
       </li>

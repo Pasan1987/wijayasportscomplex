@@ -35,6 +35,55 @@
           </div>
 
          <!--Content-->
+         <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">NIC</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Position</th>
+      <th scope="col">Contact</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>dsad</td>
+      <td>as</td>
+      <td>asd</td>
+      <td>
+      <i class="fas fa-pen" aria-hidden="true"></i>
+      </td>
+      <td>
+      <i class="	fas fa-trash-alt" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>wee</td>
+      <td>ccx</td>
+      <td>aas</td>
+      <td>
+      <i class="fas fa-pen" aria-hidden="true"></i>
+      </td>
+      <td>
+      <i class="	fas fa-trash-alt" aria-hidden="true"></i>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
 
 
          <!--Content-->

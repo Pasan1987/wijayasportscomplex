@@ -71,6 +71,15 @@ $this->load->view('common/header.php');
                             </select>
                          </div> 
                          <br>
+                         <div class="checkbox">
+                          <label><input type="checkbox" name="swimming" id="swimming" value="">Swimming</label>
+                          <!-- </div>
+                         <div class="checkbox"> -->
+                         <label><input type="checkbox" name="badminton" id="badminton"value="">Badminton</label>
+                        <!-- </div> -->
+                        <!-- <div class="checkbox disabled"> -->
+                      <label><input type="checkbox" name="bodybuilding" id="bodybuilding"value="">Bodybuilding</label>
+                       </div>
                             <div class="form-group">
                                 <label><strong>Mobile Number</strong></label>
                                 <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" id="mobilenumber" value="" />
@@ -83,6 +92,7 @@ $this->load->view('common/header.php');
                 <div class="col-md-12 row">
                 <div class="col-md-6">
                 <input type="reset" class="btn btn-primary btn-user btn-block" value="reset" />
+                <!-- <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/view_employee/viewemp_details">View</a> -->
                 </div>
                 <div class="col-md-6">
                

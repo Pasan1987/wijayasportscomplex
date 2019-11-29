@@ -40,7 +40,9 @@ $this->load->view('common/header.php');
       <th scope="col">Date of Birth</th>
       <th scope="col">Position</th>
       <th scope="col">Contact</th>
-      <th scope="col">Status</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+
     </tr>
   </thead>
   <tbody>
@@ -52,8 +54,11 @@ $this->load->view('common/header.php');
       <td>dsad</td>
       <td>as</td>
       <td>asd</td>
-      <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
-      <button type="button" class="btn btn-primary btn-sm">Delete</button>
+      <td>
+      <i class="fas fa-pen" aria-hidden="true"></i>
+      </td>
+      <td>
+      <i class="	fas fa-trash-alt" aria-hidden="true"></i>
       </td>
     </tr>
     <tr>
@@ -64,8 +69,11 @@ $this->load->view('common/header.php');
       <td>wee</td>
       <td>ccx</td>
       <td>aas</td>
-      <td><button type="button" class="btn btn-primary btn-sm">Edit</button>
-      <button type="button" class="btn btn-primary btn-sm">Delete</button>
+      <td>
+      <i class="fas fa-pen" aria-hidden="true"></i>
+      </td>
+      <td>
+      <i class="	fas fa-trash-alt" aria-hidden="true"></i>
       </td>
     </tr>
     

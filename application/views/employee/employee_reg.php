@@ -30,7 +30,7 @@ $this->load->view('common/header.php');
 
           <!-- Page Heading -->
          <!-- content -->
-         <form action = "<?php echo base_url('index.php/employee/employee_registration/employee_reg/employeeRegProcess')?>" method = "POST">
+         <form action = "<?php echo base_url('index.php/employee/employee_reg/employeeRegProcess')?>" method = "POST">
          <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">

@@ -12,7 +12,7 @@ class Employee_reg extends CI_Controller{
 
     public function employeeReg()
 	{
-		$this->load->view('employee/employee_registration/Employee_reg');
+		$this->load->view('employee/employee_reg');
 	}
 
 	public function employeeRegProcess()
