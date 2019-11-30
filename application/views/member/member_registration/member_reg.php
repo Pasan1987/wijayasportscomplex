@@ -40,23 +40,23 @@ $this->load->view('common/header.php');
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label><strong>First Name</strong></label>
-                                <input type="text" class="form-control bdr-color" placeholder="First Name *" value="" id="firstname" value="" Name="firstname" />
+                                <input type="text" class="form-control bdr-color" placeholder="First Name *" value="" id="firstname" value="" Name="firstname" required />
                             </div>
                             <div class="form-group">
                                 <label><strong>Date of Birth</strong></label>
-                                <input type="number" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" id="dateofbirth" value="" Name = "dob" />
+                                <input type="date" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" id="dateofbirth" value="" Name = "dob" required />
                             </div>
 
                             <div class="form-group">
                              <label for="comment"><strong>Address</strong></label>
-                              <textarea class="form-control  bdr-color" rows="6" id="address" name="address"></textarea>
+                              <textarea class="form-control  bdr-color" rows="6" id="address" name="address" required></textarea>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
                             <label><strong>Last Name</strong></label>
-                                <input type="text" class="form-control  bdr-color" placeholder="Last Name *" id="lastname" name="lastname" value="" />
+                                <input type="text" class="form-control  bdr-color" placeholder="Last Name *" id="lastname" name="lastname" value="" required />
                             </div>
                             <div class="form-group">
                             <label><strong>NIC</strong></label>
