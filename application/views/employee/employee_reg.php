@@ -44,7 +44,7 @@ $this->load->view('common/header.php');
                             </div>
                            
                             <div>
-                            <label><strong>Select</strong></label>
+                            <label><strong>Gender</strong></label>
                             <select name="gender" id= "gender" class="form-control">
                                <option value="" selecteddisable>Select Gender</option>
                                <option value="1">Male</option>
@@ -61,16 +61,16 @@ $this->load->view('common/header.php');
                         <div class="col-md-6">
                             <div class="form-group">
                             <label><strong>Date of Birth</strong></label>
-                                <input type="text" name="dateofbirth" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" value="" id="dob"  />
+                                <input type="date" name="dateofbirth" class="form-control  bdr-color" placeholder="MM/DD/YYYY" value="memberdbo" id="dob"  />
                             </div>
                             <div class="form-group">
                             <label><strong>NIC</strong></label>
-                                <input type="text" minlength="10" maxlength="10" name="nic" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
+                                <input type="text" minlength="12" maxlength="12" name="nic" class="form-control  bdr-color" placeholder="NIC*" value="" />
                             </div>
                             <div>
                             <label><strong>Designation</strong></label>
                             <select name="designation" id= "designation" class="form-control">
-                               <option value="" selecteddisable>Select Gender</option>
+                               <option value="" selecteddisable>Select Designation</option>
                                <option value="1">Chairman</option>
                                <option value="2">Manager</option> 
                                <option value="3">Employee</option>
@@ -80,19 +80,18 @@ $this->load->view('common/header.php');
                                 <label><strong>Mobile Number</strong></label>
                                 <input type="number" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control  bdr-color" placeholder="Your Phone *" value="" />
                             </div>
-    
-                  
-                            
+        
                     </div>
                 </div>
                 <div class="col-md-12 row">
                 <div class="col-md-6">
-                <input type="reset" class="btn btn-primary btn-user btn-block" value="reset" />
+                <input type="reset" class="btn btn-primary btn-user btn-block" value="Clear" />
                 </div>
                 <div class="col-md-6">
-                <input type="submit" class="btn btn-primary btn-user btn-block" value="Submit" />
+                <input type="submit" class="btn btn-primary btn-user btn-block" value="Add" />
                 </div>
                 </div>
+                
             </div>
             </form>
                 <div class="col-md-2"></div>

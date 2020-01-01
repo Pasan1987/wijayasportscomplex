@@ -28,4 +28,9 @@ class Employee_model extends CI_Model
        $this->db->insert('employee',$employee);
        
     }
+    // function employeeRegProcess($employee)
+    // {
+    //     return $this->db->insert('employee', $employee);
+    // }
+    
 }

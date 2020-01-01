@@ -8,7 +8,7 @@
         
           <!-- <i class="fas fa-laugh-wink"></i> -->
         </div>
-        <div class="sidebar-brand-text mx-3">W S C</div>
+        <div class="sidebar-brand-text mx-3">Wijaya Sports Complex</div>
       </a>
 
       <!-- Divider -->
@@ -38,8 +38,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Components:</h6> -->
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/member/member_registration/Registration/registrationProcess">Registration</a>
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/member/view_member/view_memberdetails/viewMember">View</a>
+            <a class="collapse-item" href="<?php echo base_url() ?>index.php/member/Registration/registrationProcess">Registration</a>
+            <a class="collapse-item" href="<?php echo base_url() ?>index.php/member/view_memberdetails/viewMember">View</a>
           </div>
         </div>
       </li>
@@ -54,7 +54,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Components:</h6> -->
             <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/employee_reg/employeeReg">Registration</a>
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/view_employee/viewemp_details">View</a>
+            <a class="collapse-item" href="<?php echo base_url() ?>index.php/employee/employee_view/view_empdetails">View</a>
           </div>
         </div>
       </li>
@@ -91,7 +91,7 @@
       </li>
 
       <!-- Divider -->
-     <hr class="sidebar-divider">
+     
 
       <!-- Heading -->
       <div class="sidebar-heading">
@@ -99,21 +99,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Sports</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <!-- <h6 class="collapse-header">Login Screens:</h6> -->
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/sport/badminton/sportBadminton">Badminton</a>
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/sport/bodybuilding/sportBodybuilding">Body Building</a>
-            <a class="collapse-item" href="<?php echo base_url() ?>index.php/sport/swimming/sportSwimming">Swimming</a>
-            <div class="collapse-divider"></div>
-          </div>
-        </div>
-      </li>
+     
 
       <!-- <hr class="sidebar-divider"> -->
 

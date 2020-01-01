@@ -55,9 +55,9 @@
                 <div class="panel-body form-horizontal payment-form">
                     <div class="form-group">
                         <div class="row">
-                        <label for="concept" class="col-sm-4 control-label">ID</label>
+                        <label for="concept" class="col-sm-4 control-label">Member ID</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="concept" name="concept">
+                            <input type="text" class="form-control" id="memberid" name="id">
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 </div>
                     <div class="form-group">
                         <div class="col-sm-12 text-right">
-                            <button type="button" class="btn btn-default preview-add-button" onclick="btnAdd()">
+                            <button type="button" class="btn btn-primary preview-add-button" onclick="btnAdd()">
                                 <span class="glyphicon glyphicon-plus"></span> Add
                             </button>
                         </div>
@@ -112,24 +112,26 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="table-responsive">
-                        <table class="table preview-table">
+                        <table class="table preview-table"  id="tbdPayment">
                             <thead>
                                 <tr>
-                                    <th>Concept</th>
+                                    <th>Member ID</th>
                                     <th>Description</th>
                                     <th>Amount</th>
                                     <th>Status</th>
                                     <th>Date</th>
                                 </tr>
                             </thead>
-                            <tbody id="tbdPayment"></tbody> <!-- preview content goes here-->
+                            <tbody>
+                                <tr ></tr>
+                            </tbody> <!-- preview content goes here-->
                         </table>
                     </div>                            
                 </div>
             </div>
             <div class="row text-right">
                 <div class="col-xs-12">
-                    <h4>Total: <strong><span class="preview-total"></span></strong></h4>
+                    <!-- <h4>Total: <strong><span class="preview-total"></span></strong></h4> -->
                 </div>
             </div>
             <div class="row">
@@ -168,38 +170,38 @@
 <script>
 function btnAdd()
 {
-    var concept = document.getElementById('concept').value;
+    var id = document.getElementById('memberid').value;
     var description = document.getElementById('description').value;
     var amount = document.getElementById('amount').value;
     var status = document.getElementById('status').value;
     var date = document.getElementById('date').value;
         
-    var tbdPayment = document.getElementById('tbdPayment');
+    var t  = document.createElement("table"),
+    tb = document.createElement("tbody"),
+    tr = document.createElement("tr"),
+    tdId = document.createElement("td");
+    tdDescription = document.createElement("td");
+    tdAmount = document.createElement("td");
+    tdStatus = document.createElement("td");
+    tdDate = document.createElement("td");
 
-    var row = document.createElement("tr");
-   
-
-    var tdConcept = document.createElement("td");
-    var tdDescription = document.createElement("td");
-    var tdAmount = document.createElement("td");
-    var tdStatus = document.createElement("td");
-    var tdDate = document.createElement("td");
-
-    tdConcept.innerHTML = concept;
+    tdId.innerHTML = id;
     tdDescription.innerHTML = description;
     tdAmount.innerHTML = amount;
     tdStatus.innerHTML = status;
     tdDate.innerHTML = date;
 
-    row.appendChild(tdConcept);
-    row.appendChild(tdDescription);
-    row.appendChild(tdAmount);
-    row.appendchild(tdStatud);
-    row.appendchild(tdDate);
+    tr.appendChild(tdId)
+    tr.appendChild(tdDescription)
+    tr.appendChild(tdAmount)
+    tr.appendChild(tdStatus)
+    tr.appendChild(tdDate)
 
-    tbdPayment.appendChild(row);
+    document.getElementById("tbdPayment").appendChild(tr);
+
 }
 </script>
+
 
 </html>
 

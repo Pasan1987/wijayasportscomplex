@@ -71,7 +71,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                             <label><strong>Date</strong></label>
-                                <input type="text" class="form-control  bdr-color" placeholder="DD/MM/YYYY *" id="date" name="date"value="" />
+                                <input type="date" class="form-control  bdr-color" placeholder="MM/DD/YYYY *" id="date" name="date"value="" />
                             </div>
                             <div class="form-group">
                             <label><strong>Time</strong></label>

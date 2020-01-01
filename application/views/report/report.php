@@ -44,10 +44,28 @@
                         <label for="date" class="col-sm-1 control-label">To</label>
                         <div class="col-sm-5">
                             <input type="date" class="form-control" id="date" name="date">
-                    </div>   
+                    </div><br>
+                    <label><strong>Select Report Type</strong></label>
+                            <select name="gender" id= "gender" class="form-control">
+                               <option value="" selecteddisable>Select Report Type</option>
+                               <option value="1">Payment</option>
+                               <option value="2">Reservation</option> 
+                               <option value="3">Registration</option>
+                            </select> 
+</div><br><br><br><br>
+                            <div class="col-md-12 row">
+                <div class="col-md-6">
+                <input type="reset" class="btn btn-primary btn-user btn-block" value="Generate and Download" />
+                
+                </div>
+                
+                </form>
+                </div>
+                </div>
                 </div>
                 <div>
                 </div>
+                
 
          <!--Content-->
 
