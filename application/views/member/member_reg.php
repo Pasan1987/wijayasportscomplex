@@ -72,13 +72,13 @@ $this->load->view('common/header.php');
                          </div> 
                          <br>
                          <div class="checkbox">
-                          <label><input type="checkbox" name="swimming" id="swimming" value="">Swimming</label>
+                          <label><input type="checkbox" name="badminton" id="badminton" value="1">Badminton</label>
                           <!-- </div>
                          <div class="checkbox"> -->
-                         <label><input type="checkbox" name="badminton" id="badminton"value="">Badminton</label>
+                         <label><input type="checkbox" name="swimming" id="swimming" value="2">Swimming</label>
                         <!-- </div> -->
                         <!-- <div class="checkbox disabled"> -->
-                      <label><input type="checkbox" name="bodybuilding" id="bodybuilding"value="">Bodybuilding</label>
+                      <label><input type="checkbox" name="bodybuilding" id="bodybuilding" value="3">Bodybuilding</label>
                        </div>
                             <div class="form-group">
                                 <label><strong>Mobile Number</strong></label>

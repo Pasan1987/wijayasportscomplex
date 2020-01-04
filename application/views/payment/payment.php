@@ -30,8 +30,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Payment</h1>
-            
+            <h1 class="h3 mb-0 text-gray-800">Payment</h1>  
           </div>
 
          <!--Content-->
@@ -57,7 +56,7 @@
                         <div class="row">
                         <label for="concept" class="col-sm-4 control-label">Member ID</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" id="memberid" name="id">
+                            <input type="text" class="form-control" id="memberid" name="membername">
                         </div>
                     </div>
                 </div>
@@ -106,7 +105,8 @@
                 </div>
             </div>  
         </div>          
-        </div> <!-- / panel preview -->
+        </div> 
+        <!-- / panel preview -->
         <div class="col-sm-6">
             <h4>Preview:</h4>
             <div class="row">
@@ -131,7 +131,7 @@
             </div>
             <div class="row text-right">
                 <div class="col-xs-12">
-                    <!-- <h4>Total: <strong><span class="preview-total"></span></strong></h4> -->
+                <!-- <h4>Total: <strong><span class="preview-total"></span></strong></h4> -->
                 </div>
             </div>
             <div class="row">
@@ -141,12 +141,9 @@
                 </div>                
             </div>
         </div>
-        </div>
-	
+    </div>
 </div>
-
-         <!--Content-->
-
+ <!--Content-->
         </div>
         <!-- /.container-fluid -->
 
@@ -199,6 +196,11 @@ function btnAdd()
 
     document.getElementById("tbdPayment").appendChild(tr);
 
+    document.getElementById('memberid').value = "";
+    document.getElementById('description').value="";
+    document.getElementById('amount').value="";
+    document.getElementById('status').value="";
+    document.getElementById('date').value="";
 }
 </script>
 

@@ -7,7 +7,6 @@ class Registration extends CI_Controller
     {
         parent::__construct();
         $this->load->model('member_model/member_model');
-        
     }
 
     public function registrationProcess()
@@ -23,17 +22,13 @@ class Registration extends CI_Controller
         $this->load->view('member/member_regfee');
     }
     public function memberRegProcess()
-	{
-
-		$this->member_model->memberRegprocess();
+    {
+        $this->member_model->memberRegprocess();
     }
     public function memberRegmesurement()
-	{
-
+    {
         $this->member_model->memberMesurement();
-
-        
-        }
+    }
     //       {
     //  $responce = $this->member_model->memberMesurement();
     //   if ($responce)
@@ -47,7 +42,22 @@ class Registration extends CI_Controller
 
     //   }
 
-    
+    public function paymentProcess()
+    {
+        $json = $_POST['txtJson'];
+        $total = $_POST['txtTotal'];
+        echo $json;
+        echo $total;
+    }
 
+    public function loadview()
+    {
+        $this->data['members'] = $this->member_model->loadview();
+        $this->load->view('member/view_memdetails', $this->data);
+    }
 
+    public function editMember()
+    {
+        $this->load->view('member/member_edit');
+    }
 }

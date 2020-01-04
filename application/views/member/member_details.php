@@ -62,7 +62,7 @@ $this->load->view('common/header.php');
                              <div class="col-md-6">
                             <div class="form-group">
                                 <label><strong>Forearm</strong></label>
-                                <input type="number" class="form-control  bdr-color" placeholder="Forearm *" name="foearm"  Id="foearm" value="" />
+                                <input type="number" class="form-control  bdr-color" placeholder="Forearm *" name="forearm"  Id="foearm" value="" />
                             </div>
                             <div class="form-group">
                                 <label><strong>Arm</strong></label>

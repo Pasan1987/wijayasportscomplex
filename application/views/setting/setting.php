@@ -3,10 +3,10 @@
 
 <head>
 
- <?php
-    $this->load->view('common/header.php');
- ?>
- <title>Test</title>
+  <?php
+  $this->load->view('common/header.php');
+  ?>
+  <title>Test</title>
 
 </head>
 
@@ -23,39 +23,90 @@
       <!-- Main Content -->
       <div id="content">
 
-            <?php $this->load->view('common/navbar.php'); ?>
+        <?php $this->load->view('common/navbar.php'); ?>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Setting</h1>
-            
-          </div>
+          <!-- content -->
+          <form method="POST">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-7">
+                <div class="card" style="padding:20px; border-color:#4e73df">
+                  <div class="card-header">
+                    <h4 style="padding-left: 190px;"><strong>SETTINGS</strong></h4>
+                  </div><br>
+                  <div class="row col-md-12">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label><strong>Since</strong></label>
+                        <input type="date" class="form-control bdr-color" placeholder="Name with Initials*" value="" name="namewithinitial" />
+                      </div>
+                      <div>
+                        <label>
+                          <strong>Select Report</strong>
+                        </label>
+                        <select name="select report" id="select report" class="form-control">
+                          <option value="" selecteddisable>Select Report</option>
+                          <option value="1">Payment</option>
+                          <option value="2">Registration</option>
+                          <option value="2">Reservation</option>
+                        </select>
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <!-- <div class="form-group">
+                              <label for="comment"><strong>Address</strong></label>
+                              <textarea class="form-control  bdr-color" rows="2" name = "address" id="address"></textarea>
+                            </div> -->
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <strong>To</strong>
+                        </label>
+                        <input type="date" name="dateofbirth" class="form-control  bdr-color" placeholder="MM/DD/YYYY" value="memberdbo" id="dob" />
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-12 row"> -->
+                  <div>
+                    <input type="submit" class="btn btn-primary btn-user btn-block" value="Generate and Download" />
+                  </div>
+                  <!-- <div class="col-md-6">
+                <input type="submit" class="btn btn-primary btn-user btn-block" value="Add" />
+                </div> -->
 
-         <!--Content-->
 
-
-         <!--Content-->
-
+                </div>
+          </form>
+          <div class="col-md-2"></div>
         </div>
-        <!-- /.container-fluid -->
+
+        <!-- content -->
 
       </div>
-      <!-- End of Main Content -->
-    <?php 
-    $this->load->view('common/footer.php');
-     ?>
-     
+      <!-- /.container-fluid -->
 
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Main Content -->
+    <?php
+    $this->load->view('common/footer.php');
+    ?>
+
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
-<?php $this->load->view('common/scripts.php'); ?>
-  
+  <?php $this->load->view('common/scripts.php'); ?>
+
 
 </body>
 
